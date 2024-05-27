@@ -10,6 +10,7 @@ import AllProduct from "../Pages/AllProduct/AllProduct";
 import AddProduct from "../Pages/AddProduct/AddProduct";
 import ContactUs from "../Pages/ContactUs/ContactUs";
 import AdminRoute from "./AdminRoute";
+import ManageProducts from "../Layouts/DashBoard/ManageProducts";
 
 export const router = createBrowserRouter([
     {
@@ -53,6 +54,10 @@ export const router = createBrowserRouter([
             {
                 path: "",
                 element: <AdminRoute><DashBoard></DashBoard></AdminRoute>
+            },
+            {
+                path: "manageProducts",
+                element:<ManageProducts></ManageProducts>
             },
             
         ]
