@@ -9,6 +9,7 @@ import AboutUs from "../Pages/AboutUs/AboutUs";
 import AllProduct from "../Pages/AllProduct/AllProduct";
 import AddProduct from "../Pages/AddProduct/AddProduct";
 import ContactUs from "../Pages/ContactUs/ContactUs";
+import AdminRoute from "./AdminRoute";
 
 export const router = createBrowserRouter([
     {
@@ -20,28 +21,28 @@ export const router = createBrowserRouter([
                 element: <Home></Home>
             },
             {
-                path:"login",
-                element:<Login></Login>
+                path: "login",
+                element: <Login></Login>
             },
             {
-                path:"signUp",
-                element:<SignUp></SignUp>
+                path: "signUp",
+                element: <SignUp></SignUp>
             },
             {
-                path:"aboutUs",
-                element:<AboutUs></AboutUs>
+                path: "aboutUs",
+                element: <AboutUs></AboutUs>
             },
             {
-                path:"allProducts",
-                element:<AllProduct></AllProduct>
+                path: "allProducts",
+                element: <AllProduct></AllProduct>
             },
             {
-                path:"addProduct",
-                element:<AddProduct></AddProduct>
+                path: "addProduct",
+                element: <AddProduct></AddProduct>
             },
             {
-                path:"contactUs",
-                element:<ContactUs></ContactUs>
+                path: "contactUs",
+                element: <ContactUs></ContactUs>
             },
         ]
     },
@@ -51,8 +52,9 @@ export const router = createBrowserRouter([
         children: [
             {
                 path: "",
-                element: <DashBoard></DashBoard>
-            }
+                element: <AdminRoute><DashBoard></DashBoard></AdminRoute>
+            },
+            
         ]
     }
 ]);
