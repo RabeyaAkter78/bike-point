@@ -1,4 +1,3 @@
-import { FaAward, FaRegSmile, FaUserAlt, FaUserShield } from "react-icons/fa";
 import SectionTitle from "../../Components/SectionTitle/SectionTitle";
 
 

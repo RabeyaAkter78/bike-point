@@ -2,7 +2,7 @@
     {
       "sellerName": "Speedy Bikes",
       "sellerEmail": "speedy@example.com",
-      "bikePhoto": "../public/mbike.jpeg",
+      "bikePhoto": "/mbike.jpeg",
       "bikeName": "Speedster 1000",
       "bikePrice": "7000",
       "bikeSpecification": "Engine: 1000cc, Top Speed: 180 mph, Fuel Capacity: 17 liters",
@@ -11,7 +11,7 @@
     {
       "sellerName": "Bike Haven",
       "sellerEmail": "bikehaven@example.com",
-      "bikePhoto": "../public/mbike-2.jpeg",
+      "bikePhoto": "/mbike-2.jpeg",
       "bikeName": "Thunderbolt X1",
       "bikePrice": "8500",
       "bikeSpecification": "Engine: 1200cc, Top Speed: 200 mph, Fuel Capacity: 20 liters",
@@ -20,7 +20,7 @@
     {
       "sellerName": "Rider's Choice",
       "sellerEmail": "riderschoice@example.com",
-      "bikePhoto": "../public/mbike-3.jpeg",
+      "bikePhoto": "/mbike-3.jpeg",
       "bikeName": "Blaze Racer 500",
       "bikePrice": "4500",
       "bikeSpecification": "Engine: 500cc, Top Speed: 160 mph, Fuel Capacity: 15 liters",
@@ -29,7 +29,7 @@
     {
       "sellerName": "Motor Masters",
       "sellerEmail": "motormasters@example.com",
-      "bikePhoto": "../public/mbike-4.jpeg",
+      "bikePhoto": "/mbike-4.jpeg",
       "bikeName": "Wildfire 750",
       "bikePrice": "6200",
       "bikeSpecification": "Engine: 750cc, Top Speed: 170 mph, Fuel Capacity: 18 liters",
@@ -38,7 +38,7 @@
     {
       "sellerName": "Bike Emporium",
       "sellerEmail": "bikeemporium@example.com",
-      "bikePhoto": "../public/mbike-5.jpeg",
+      "bikePhoto": "/mbike-5.jpeg",
       "bikeName": "StreetBlazer 300",
       "bikePrice": "3500",
       "bikeSpecification": "Engine: 300cc, Top Speed: 140 mph, Fuel Capacity: 12 liters",
@@ -47,7 +47,7 @@
     {
       "sellerName": "Cycle Central",
       "sellerEmail": "cyclecentral@example.com",
-      "bikePhoto": "../public/mbike-6.jpeg",
+      "bikePhoto": "/mbike-6.jpeg",
       "bikeName": "Rapid Rider 400",
       "bikePrice": "4000",
       "bikeSpecification": "Engine: 400cc, Top Speed: 150 mph, Fuel Capacity: 14 liters",
@@ -56,7 +56,7 @@
     {
       "sellerName": "Speedy Bikes",
       "sellerEmail": "speedy@example.com",
-      "bikePhoto": "../public/mbike-7.jpeg",
+      "bikePhoto": "/mbike-7.jpeg",
       "bikeName": "Speedster 900",
       "bikePrice": "6500",
       "bikeSpecification": "Engine: 900cc, Top Speed: 165 mph, Fuel Capacity: 16 liters",
@@ -65,7 +65,7 @@
     {
       "sellerName": "Bike Haven",
       "sellerEmail": "bikehaven@example.com",
-      "bikePhoto": "../public/mbike-8.jpeg",
+      "bikePhoto": "/mbike-8.jpeg",
       "bikeName": "Thunderbolt X2",
       "bikePrice": "9000",
       "bikeSpecification": "Engine: 1300cc, Top Speed: 210 mph, Fuel Capacity: 22 liters",
@@ -74,7 +74,7 @@
     {
       "sellerName": "Rider's Choice",
       "sellerEmail": "riderschoice@example.com",
-      "bikePhoto": "../public/mbike-9.jpeg",
+      "bikePhoto": "/mbike-9.jpeg",
       "bikeName": "Blaze Racer 700",
       "bikePrice": "5500",
       "bikeSpecification": "Engine: 700cc, Top Speed: 175 mph, Fuel Capacity: 17 liters",
@@ -83,7 +83,7 @@
     {
       "sellerName": "Motor Masters",
       "sellerEmail": "motormasters@example.com",
-      "bikePhoto": "../public/mbike-10.jpeg",
+      "bikePhoto": "/mbike-10.jpeg",
       "bikeName": "Wildfire 800",
       "bikePrice": "6800",
       "bikeSpecification": "Engine: 800cc, Top Speed: 172 mph, Fuel Capacity: 19 liters",
@@ -92,7 +92,7 @@
     {
       "sellerName": "Bike Emporium",
       "sellerEmail": "bikeemporium@example.com",
-      "bikePhoto": "../public/mbike-11.jpeg",
+      "bikePhoto": "/mbike-11.jpeg",
       "bikeName": "StreetBlazer 350",
       "bikePrice": "3800",
       "bikeSpecification": "Engine: 350cc, Top Speed: 145 mph, Fuel Capacity: 13 liters",
@@ -101,7 +101,7 @@
     {
       "sellerName": "Cycle Central",
       "sellerEmail": "cyclecentral@example.com",
-      "bikePhoto": "../public/mbike-12.jpeg",
+      "bikePhoto": "/mbike-12.jpeg",
       "bikeName": "Rapid Rider 500",
       "bikePrice": "4500",
       "bikeSpecification": "Engine: 500cc, Top Speed: 155 mph, Fuel Capacity: 15 liters",

@@ -10,7 +10,7 @@ const Banner = () => {
                 className="w-full h-full object-cover"
                 controls
             >
-                <source src="/public/banner.mp4" type="video/mp4" />
+                <source src="/banner.mp4" type="video/mp4" />
             </video>
             <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white bg-black bg-opacity-50 p-4">
                 <h1 className="text-4xl md:text-6xl font-bold">Ride Into Adventure</h1>
