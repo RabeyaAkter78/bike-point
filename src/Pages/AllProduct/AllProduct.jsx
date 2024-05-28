@@ -7,7 +7,7 @@ const AllProduct = () => {
     const [error, setError] = useState(null);
     const [selectedProduct, setSelectedProduct] = useState(null);
     // load all product:
-    useEffect(() => { 
+    useEffect(() => {
         setLoading(true);
         setError(null);
         fetch(`https://bike-point-server.vercel.app/products`)
@@ -26,7 +26,13 @@ const AllProduct = () => {
         document.getElementById('product_modal').showModal();
     };
 
+    if (loading) {
+        return <div>Loading...</div>;
+    }
 
+    if (error) {
+        return <div>Error: {error}</div>;
+    }
     return (
 
         <div className="  mb-10">
@@ -45,7 +51,7 @@ const AllProduct = () => {
                                 <p className="font-bold text-neutral-600"> Price: ${product.bikePrice}</p>
                                 <p className="font-bold text-neutral-600"> Condition: {product.condition}</p>
                                 <div className="card-actions justify-end">
-                                    <button  onClick={() => handleDetailsClick(product)} className="btn bg-orange-500 hover:bg-orange-700 text-white">See More</button>
+                                    <button onClick={() => handleDetailsClick(product)} className="btn bg-orange-500 hover:bg-orange-700 text-white">See More</button>
                                 </div>
                             </div>
                         </div>
@@ -63,7 +69,7 @@ const AllProduct = () => {
                         <p>Specification: {selectedProduct.bikeSpecification}</p>
                         <p>Seller Name: {selectedProduct.sellerName}</p>
                         <p>sellerEmail: {selectedProduct.sellerEmail}</p>
-                    
+
                         <div className="modal-action flex gap-2">
                             <form method="dialog">
                                 <button className="btn  bg-orange-500 hover:bg-orange-700 text-white">Close</button>
