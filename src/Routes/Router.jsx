@@ -11,6 +11,7 @@ import AddProduct from "../Pages/AddProduct/AddProduct";
 import ContactUs from "../Pages/ContactUs/ContactUs";
 import AdminRoute from "./AdminRoute";
 import ManageProducts from "../Layouts/DashBoard/ManageProducts";
+import PrivateRoute from "./PrivateRoute";
 
 export const router = createBrowserRouter([
     {
@@ -39,7 +40,7 @@ export const router = createBrowserRouter([
             },
             {
                 path: "addProduct",
-                element: <AddProduct></AddProduct>
+                element:<PrivateRoute> <AddProduct></AddProduct></PrivateRoute>
             },
             {
                 path: "contactUs",

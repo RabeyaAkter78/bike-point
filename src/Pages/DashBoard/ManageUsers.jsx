@@ -12,7 +12,7 @@ const ManageUsers = () => {
         setError(null);
 
         try {
-            const response = await fetch('http://localhost:5000/users');
+            const response = await fetch('https://bike-point-server.vercel.app/users');
             const data = await response.json();
             setUsers(data);
         } catch (error) {
@@ -29,7 +29,7 @@ const ManageUsers = () => {
     // Handle make admin
     const handleMakeAdmin = async (user) => {
         try {
-            const response = await fetch(`http://localhost:5000/users/admin/${user._id}`, {
+            const response = await fetch(`https://bike-point-server.vercel.app/users/admin/${user._id}`, {
                 method: 'PATCH'
             });
             const data = await response.json();
@@ -61,7 +61,7 @@ const ManageUsers = () => {
             confirmButtonText: 'Yes, delete it!'
         }).then((result) => {
             if (result.isConfirmed) {
-                fetch(`http://localhost:5000/users/${user._id}`, {
+                fetch(`https://bike-point-server.vercel.app/users/${user._id}`, {
                     method: 'DELETE'
                 })
                 .then(res => res.json())

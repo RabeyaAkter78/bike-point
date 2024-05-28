@@ -10,7 +10,7 @@ const AddProduct = () => {
     const formRef = useRef(null);
 
     const handleAddProduct = (data) => {
-        fetch("http://localhost:5000/addProduct", {
+        fetch("https://bike-point-server.vercel.app/addProduct", {
             method: "POST",
             headers: {
                 'content-type': 'application/json'

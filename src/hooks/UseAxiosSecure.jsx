@@ -4,7 +4,7 @@ import { useContext, useEffect } from "react";
 import { AuthContext } from "../Providers/AuthProviders";
 
 const axiosSecure = axios.create({
-    baseURL: 'http://localhost:5000/',
+    baseURL: 'https://bike-point-server.vercel.app/',
 });
 
 const UseAxiosSecure = () => {

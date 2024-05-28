@@ -12,7 +12,7 @@ const ManageProducts = () => {
     const { data, refetch, isLoading, isError, error } = useQuery({
         queryKey: ['products'],
         queryFn: async () => {
-            const res = await fetch('http://localhost:5000/products');
+            const res = await fetch('https://bike-point-server.vercel.app/products');
             return res.json();
         }
     });
@@ -34,7 +34,7 @@ const ManageProducts = () => {
             confirmButtonText: 'Yes, delete it!'
         }).then((result) => {
             if (result.isConfirmed) {
-                fetch(`http://localhost:5000/products/${productId}`, {
+                fetch(`https://bike-point-server.vercel.app/products/${productId}`, {
                     method: 'DELETE'
                 })
                     .then(res => res.json())
@@ -78,7 +78,7 @@ const ManageProducts = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        axios.patch(`http://localhost:5000/products/${currentProduct._id}`, currentProduct)
+        axios.patch(`https://bike-point-server.vercel.app/products/${currentProduct._id}`, currentProduct)
             .then((response) => {
                 Swal.fire({
                     title: 'Success!',

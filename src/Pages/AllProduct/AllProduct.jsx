@@ -10,7 +10,7 @@ const AllProduct = () => {
     useEffect(() => { 
         setLoading(true);
         setError(null);
-        fetch(`http://localhost:5000/products`)
+        fetch(`https://bike-point-server.vercel.app/products`)
             .then(res => res.json())
             .then(data => {
                 setProducts(data);
