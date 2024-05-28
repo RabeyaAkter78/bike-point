@@ -7,16 +7,12 @@ const ManageUsers = () => {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
 
-    // Fetch users from the server
     const fetchUsers = async () => {
         setLoading(true);
         setError(null);
 
         try {
             const response = await fetch('http://localhost:5000/users');
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
             const data = await response.json();
             setUsers(data);
         } catch (error) {
@@ -30,7 +26,7 @@ const ManageUsers = () => {
         fetchUsers();
     }, []);
 
-    // Handle making a user an admin
+    // Handle make admin
     const handleMakeAdmin = async (user) => {
         try {
             const response = await fetch(`http://localhost:5000/users/admin/${user._id}`, {
@@ -38,7 +34,7 @@ const ManageUsers = () => {
             });
             const data = await response.json();
             if (data.modifiedCount) {
-                fetchUsers(); // Refetch users after making an admin
+                fetchUsers();
                 Swal.fire({
                     position: 'top',
                     icon: 'success',
@@ -52,7 +48,8 @@ const ManageUsers = () => {
         }
     };
 
-    // Handle deleting a user
+    // Handle deleting a user:
+
     const handleDelete = (user) => {
         Swal.fire({
             title: 'Are you sure?',
@@ -70,7 +67,7 @@ const ManageUsers = () => {
                 .then(res => res.json())
                 .then(data => {
                     if (data.deletedCount > 0) {
-                        fetchUsers(); // Refetch users after deletion
+                        fetchUsers(); 
                         Swal.fire(
                             'Deleted!',
                             'Your file has been deleted.',
@@ -94,10 +91,10 @@ const ManageUsers = () => {
     }
 
     return (
-        <div className="w-full h-full">
-            <h3 className="text-3xl font-semibold">All Users: {users.length}</h3>
-            <div className="overflow-x-auto w-full">
-                <table className="table table-zebra w-full">
+        <div className="w-full h-full ">
+            <h3 className="text-3xl font-bold text-orange-500 text-center mb-8 border-b-4 border-orange-500">All Users: {users.length}</h3>
+            <div className="overflow-x-auto w-full ">
+                <table className="table table-zebra w-full bg-orange-200">
                     {/* head */}
                     <thead>
                         <tr>

@@ -7,7 +7,7 @@ const AllProduct = () => {
     const [error, setError] = useState(null);
     const [selectedProduct, setSelectedProduct] = useState(null);
     // load all product:
-    useEffect(() => {
+    useEffect(() => { 
         setLoading(true);
         setError(null);
         fetch(`http://localhost:5000/products`)

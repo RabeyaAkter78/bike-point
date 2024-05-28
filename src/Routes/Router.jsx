@@ -57,9 +57,9 @@ export const router = createBrowserRouter([
             },
             {
                 path: "manageProducts",
-                element:<ManageProducts></ManageProducts>
+                element: <ManageProducts></ManageProducts>
             },
-            
+
         ]
     }
 ]);
